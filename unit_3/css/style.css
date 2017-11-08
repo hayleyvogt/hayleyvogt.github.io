@@ -44,9 +44,16 @@ p {
 	padding-bottom: 20px;
 }
 
-li {
-	font-size: 16px;
+li, li a{
+	font-size: 15px;
 	color: #949396;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-decoration: none;
+}
+
+ul{
+	padding-bottom: 20px;
 }
 
 .hire-me{
@@ -65,8 +72,8 @@ li {
     position: relative;
 }
 
-.current-projects-list{
-	padding-bottom: 20px;
+.current-projects-list p{
+	padding-bottom: 5px;
 }
 
 .contact a{
@@ -85,6 +92,6 @@ li {
 	padding-top: 80px;
 }
 
-#github-padding{
+#calchub-padding{
 	padding-bottom: 20px;
 }
