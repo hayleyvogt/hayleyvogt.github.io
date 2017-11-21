@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Overpass');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-size: 16px;
+	font-family: Overpass, sans-serif;
+}
+
+header{
+	/*color: #DDDCDB;*/
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+section {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+	/*padding-bottom: 15px;*/
+}
+
+section h3{
+	font-size: 0.8125em;
+	color: #5e2d4d;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+section h4, li, li a{
+	color: #949396;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+h1, h2, h3, h4, p, li, nav, .descriptor{
+	padding-left: 50px;
+}
+
+nav a {
+	color: #949396;
+	text-transform: uppercase;
+}
+
+p, li, li a, .contact a{
+	color: #949396;
+}
+
+li, li a, .contact a, #experienced-spacing{
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+nav{
+	text-align: right;
+	padding-top: 20px;
+	padding-right: 30px;
+}
+
+nav a{
+	font-size: 0.8125em;
+	padding-left: 20px;
+	text-decoration: none;
+
+}
+
+h2{
+	font-size: 1.375em;
+	padding-bottom: 30px;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-bottom: 10px;
+}
+
+.hire-me{
+	border: 2px solid;
+	border-color: #DCAA86;
+	color: #DCAA86;
+	padding: 5px;
+	margin-left: 10px;
+}
+
+.contact p{
+	font-size: 0.9em;
+	text-transform: uppercase;
+	display: inline;
+}
+
+.end-header-words{
+	color:  #DCAA86;
+}
+
+.descriptor {
+	font-family: "Inconsolata";
+	color: #4d5465;
+}
+
+#wrapper {
+	background-image: url("../images/bg.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#slogan{
+	font-size: 5.6875em;
+	padding-top: 80px;
+}
+
+#likes li, li a{
+	display: inline;
+}
