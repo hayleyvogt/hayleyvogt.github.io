@@ -11,23 +11,23 @@ body{
 }
 
 header{
-	/*color: #DDDCDB;*/
-	background-color: #FFED74;
+	color: #DDDCDB;
+	/*background-color: #FFED74;
 	border: 1px black solid;
-	padding: 20px;
+	padding: 20px;*/
 }
 
-nav {
+/*nav {
 	background-color: #E8C66A;
 	border: 1px black solid;
 	padding: 20px;
-}
+}*/
 
 section {
-	background-color: #FFE2B8;
+	/*background-color: #FFE2B8;
 	border: 1px black solid;
-	padding: 20px;
-	/*padding-bottom: 15px;*/
+	padding: 20px;*/
+	padding-bottom: 15px;
 }
 
 section h3{
@@ -120,6 +120,10 @@ p {
 	font-size: 5.6875em;
 	padding-top: 80px;
 }
+
+/*#cool-shit{
+	font-family: "";
+}*/
 
 #likes li, li a{
 	display: inline;
