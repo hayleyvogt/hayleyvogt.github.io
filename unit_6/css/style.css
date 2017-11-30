@@ -138,6 +138,7 @@ li, li a, .contact a,{
 }
 
 div img{
+	background-image: url("../images/trevor_hanus.jpg");
 	display: block;
 	width: 100%;
 }
