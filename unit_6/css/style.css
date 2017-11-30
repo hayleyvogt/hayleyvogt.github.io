@@ -120,7 +120,6 @@ li, li a, .contact a,{
 
 #slogan{
 	font-size: 5.6875em;
-	width: 280px;
 }
 
 #two_column{
@@ -129,7 +128,7 @@ li, li a, .contact a,{
 	padding: 20px;
 }
 
-#left {
+#left{
 	background-color: #2B2C40;
 	border: 1px #2B2C40 solid;
 	padding: 20px;
