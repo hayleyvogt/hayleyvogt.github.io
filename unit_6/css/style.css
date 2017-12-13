@@ -3,6 +3,7 @@
 *{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body{
@@ -14,6 +15,7 @@ body{
     background-size: cover;
     position: relative;
     margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
 }
 
@@ -123,31 +125,23 @@ li, li a, .contact a,{
 }
 
 #two_column{
-	background-color: #2B2C40;
-	border: 1px #2B2C40 solid;
 	padding: 20px;
 }
 
 #left{
-	background-color: #2B2C40;
-	border: 1px #2B2C40 solid;
 	padding: 20px;
 	float: left;
 	width: 30%;
 }
 
-div img{
-	background-image: url("../images/trevor_hanus.jpg");
-	display: block;
-	width: 100%;
+#right{
+	padding: 20px;
+	float: left;
+	width: 70%;
 }
 
-#right{
-	background-color: #2B2C40;
-	border: 1px #2B2C40 solid;
-	padding: 20px;
-	float: right;
-	width: 62%;
+#two_column p{
+	width: 300px;
 }
 
 .clearfix:after{
