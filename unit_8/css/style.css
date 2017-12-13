@@ -148,6 +148,14 @@ h4 + p {
 	transition: all .3s ease;
 }
 
+#mobile-contact {
+	display: none;
+	background-color: #DCAA86;
+	color: #fff;
+	font-size: 1.5em;
+	text-align: center;
+}
+
 /*About Me Page*/
 
 .about-me-header {
@@ -219,31 +227,57 @@ h4 + p {
 
 }
 
-@media only screen and (max-width: 490px) {
-	body {
-		font-size: 12px;
+@media only screen and (max-width: 590px) {
+	#cool-shit {
+		display: block;
 	}
 
-	#mobile {
+	#slogan {
+		font-size: 5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+}
+
+@media only screen and (max-width: 490px) {
+	#mobile, nav:hover a, .end-header-words, #mobile-contact {
 		display: block;
 	}
 
 	nav a {
 		float: left;
-		display: none;
 		padding: .25em 0;
-
+		font-size: 0.8em;
 	}
 
-	nav:hover a {
+	.hire-me:hover {
+		background-color: #DCAA86;
+		color: #fff;
+		transition: none;
+		zoom: 0;
+	}
+
+	#slogan {
+		font-size: 3.5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	.name, .skills, nav a, .contact h3, .contact a:not(#mobile-contact), .hire-me {
+		display: none;
+	}
+
+	#projects-mobile-header {
+		font-size: 1.3em;
+	}
+
+	#mobile-contact {
 		display: block;
 	}
-
-.hire-me:hover {
-	background-color: #DCAA86;
-	color: #fff;
-	transition: none;
-	zoom: 0;
-}
 
 }
