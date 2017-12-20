@@ -242,7 +242,21 @@ h4 + p {
 
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 512px) {
+	#cool-shit {
+		display: block;
+	}
+
+	#slogan {
+		font-size: 5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 490px) {
 	#mobile, nav:hover a, .end-header-words, #mobile-contact {
 		display: block;
 	}
