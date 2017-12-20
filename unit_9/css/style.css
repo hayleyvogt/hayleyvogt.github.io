@@ -242,7 +242,7 @@ h4 + p {
 
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 510px) {
 	#mobile, nav:hover a, .end-header-words, #mobile-contact {
 		display: block;
 	}
