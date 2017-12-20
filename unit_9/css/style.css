@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Overpass');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: Overpass, sans-serif;
+	background-image: url("../images/bg.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+	font-size: 1em;
+	float: right;
+}
+
+nav a {
+	margin-right: 1.5em;
+}
+
+nav a, a {
+	color: rgba(240, 240, 240, 0.5);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav a:hover:not(.hire-me) {
+	border-bottom: 0.1em solid rgba(240, 240, 240, 0.5);
+	padding-bottom: 0.2em;
+}
+
+.hire-me {
+	border: 0.1em solid;
+	border-color: #DCAA86;
+	color: #DCAA86;
+	padding: 0.3333em;
+	margin-right: 2.5em;
+}
+
+.hire-me:hover {
+	background-color: #DCAA86;
+	color: #fff;
+	transition: all .3s ease;
+	zoom: 1.2;
+}
+
+#mobile {
+	display: none;
+}
+
+#container {
+	margin: 3em 3em 1.5em;
+	padding-bottom: 1.5em;
+}
+
+header {
+	color: #DDDCDB;
+	word-spacing: 0.3333em;
+	padding-top: 4.3em;
+	margin-bottom: 2em;
+}
+
+#slogan {
+	font-size: 6.25em;
+}
+
+.end-header-words {
+	color:  #DCAA86;
+}
+
+section {
+	margin-bottom: 1.5em;
+}
+
+section h3 {
+	font-size: 1em;
+	/*original color #5e2d4d*/
+	color: #612e4e;
+	text-transform: uppercase;
+	margin-bottom: 0.3333em;
+}
+
+section h4, li, li a {
+	color: rgba(240, 240, 240, 0.5);
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+h2 {
+	font-size: 1.8em;
+	padding-bottom: 0.5em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-bottom: 0.6em;
+	font-family: "Inconsolata";
+}
+
+p, li, li a, .contact a {
+	color: rgba(240, 240, 240, 0.25);
+}
+
+li, li a, .contact a, {
+	text-decoration: none;
+}
+
+h4 + a:hover {
+	border-bottom: 0.1em solid rgba(240, 240, 240, 0.5);
+	padding-bottom: 0.2em;
+}
+
+h4 + p {
+	padding-top: 0.5em;
+}
+
+.current-projects-list:hover {
+	border-bottom: 0.1em solid rgba(240, 240, 240, 0.5);
+	padding-bottom: 0.2em;
+}
+
+#contact-buttons {
+	margin-top: 1em;
+}
+
+.contact a {
+	font-size: 1em;
+	text-transform: uppercase;
+	display: inline;
+	border: 0.125em solid;
+	border-color: rgba(240, 240, 240, 0.25);
+	color: rgba(240, 240, 240, 0.25);
+	padding: 0.3333em;
+	margin-right: 1em;
+}
+
+.contact a:hover {
+	background-color: rgba(240, 240, 240, 0.25);
+	color: rgba(240, 240, 240, 0.5);
+	transition: all .3s ease;
+}
+
+#mobile-contact {
+	display: none;
+	background-color: #DCAA86;
+	color: #fff;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+/*About Me Page*/
+
+.about-me-header {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	color: rgba(240, 240, 240, 0.5);
+}
+
+#two-column {
+	width: 90%;
+}
+
+#left {
+	padding-right: 1.5em;
+	float: left;
+	width: 45%;
+}
+
+#right {
+	padding-left: 1.5em;
+	float: left;
+	width: 55%;
+}
+
+.clearfix:after { 
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+@media only screen and (max-width: 1160px) {
+	#slogan {
+		font-size: 5.6em;
+	}
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+}
+
+@media only screen and (max-width: 1030px) {
+	body {
+		font-size: 14px;
+	}
+
+	#slogan {
+		font-size: 6em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+}
+
+@media only screen and (max-width: 960px) {
+	#cool-shit {
+		display: block;
+	}
+
+	nav {
+		float: left;
+		margin-left: 3em;
+	}
+
+}
+
+@media only screen and (max-width: 590px) {
+	#cool-shit {
+		display: block;
+	}
+
+	#slogan {
+		font-size: 5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+}
+
+@media only screen and (max-width: 490px) {
+	#mobile, nav:hover a, .end-header-words, #mobile-contact {
+		display: block;
+	}
+
+	nav a {
+		float: left;
+		padding: .25em 0;
+		font-size: 0.8em;
+	}
+
+	.hire-me:hover {
+		background-color: #DCAA86;
+		color: #fff;
+		transition: none;
+		zoom: 0;
+	}
+
+	#slogan {
+		font-size: 3.5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	.name, .skills, nav a, .contact h3, .contact a:not(#mobile-contact), .hire-me {
+		display: none;
+	}
+
+	#projects-mobile-header {
+		font-size: 1.3em;
+	}
+
+	#mobile-contact {
+		display: block;
+	}
+
+}
