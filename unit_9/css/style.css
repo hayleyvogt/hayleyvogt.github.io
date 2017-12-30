@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	min-height: 100%;
+}
+
 body {
 	font-size: 16px;
 	font-family: Overpass, sans-serif;
@@ -79,7 +83,7 @@ section {
 	margin-bottom: 1.5em;
 }
 
-section h3 {
+section h3, h3 a {
 	font-size: 1em;
 	/*original color #5e2d4d*/
 	color: #612e4e;
@@ -150,10 +154,13 @@ h4 + p {
 
 #mobile-contact {
 	display: none;
-	background-color: #DCAA86;
-	color: #fff;
-	font-size: 1.5em;
+	border: 2px solid #DCAA86;
+	color: #DCAA86;
+	font-size: 1.2em;
 	text-align: center;
+	padding: 0.5em 1em;
+	float: left;
+	margin-bottom: 3em;
 }
 
 /*About Me Page*/
@@ -189,35 +196,69 @@ h4 + p {
 	height: 0;
 }
 
-@media only screen and (max-width: 1160px) {
+/*Projects Page*/
+#projects-header {
+	font-size: 4em;
+}
+
+#projects-subhead {
+	font-size: 1.5em;
+}
+
+#current-projects-list {
+	margin-bottom: 1.5em;
+}
+
+#current-projects-list section, #past-projects-list section {
+	max-width: 30%;
+	padding-right: 1.5em;
+	float: left;
+}
+
+h3 a:hover {
+	border-bottom: 0.1em solid #612e4e;
+	padding-bottom: 0.2em;
+}
+
+h3 + img {
+	margin: 1em 0;
+}
+
+section p {
+	max-width: 80%;
+}
+
+.job-title {
+	font-size: 0.8em;
+	word-spacing: 0.1em;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1135px) {
 	#slogan {
-		font-size: 5.6em;
+		font-size: 5.7em;
+	}
+}
+
+@media only screen and (max-width: 1060px) {
+	#slogan {
+		font-size: 5.2em;
 	}
 
 	h2 {
-		font-size: 1.6em;
+		font-size: 1.7em;
 	}
 
 }
 
-@media only screen and (max-width: 1030px) {
-	body {
-		font-size: 14px;
-	}
-
-	#slogan {
-		font-size: 6em;
-	}
-
-	h2 {
-		font-size: 1.5em;
-	}
-
-}
-
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 965px) {
 	#cool-shit {
 		display: block;
+	}
+
+	#slogan {
+		font-size: 5em;
 	}
 
 	nav {
@@ -227,51 +268,49 @@ h4 + p {
 
 }
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 620px) {
 	#cool-shit {
 		display: block;
 	}
 
 	#slogan {
-		font-size: 5em;
+		font-size: 4.8em;
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 570px) {
 	#cool-shit {
 		display: block;
 	}
 
 	#slogan {
-		font-size: 4.7em;
+		font-size: 4.2em;
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 520px) {
 	#mobile, nav:hover a, .end-header-words, #mobile-contact {
 		display: block;
 	}
 
 	nav a {
 		float: left;
-		padding: .25em 0;
-		font-size: 0.8em;
+		padding: 1em 0;
+		font-size: 1em;
 	}
 
-	.hire-me:hover {
-		background-color: #DCAA86;
-		color: #fff;
-		transition: none;
-		zoom: 0;
+	nav a:hover:not(.hire-me) {
+	border-bottom: none;
+		padding-bottom: 0;
 	}
 
 	#slogan {
@@ -280,9 +319,10 @@ h4 + p {
 
 	h2 {
 		font-size: 1.5em;
+		margin-top: 0.8em;
 	}
 
-	.name, .skills, nav a, .contact h3, .contact a:not(#mobile-contact), .hire-me {
+	.name, .skills, nav a, .contact h3, .contact a:not(#mobile-contact), nav a.hire-me {
 		display: none;
 	}
 
@@ -290,8 +330,10 @@ h4 + p {
 		font-size: 1.3em;
 	}
 
-	#mobile-contact {
-		display: block;
+	.contact a:hover {
+		background-color: transparent;
+		color: transparent;
+		transition: 0;
 	}
 
 }
