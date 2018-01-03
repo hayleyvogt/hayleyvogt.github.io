@@ -86,7 +86,7 @@ section {
 section h3, h3 a {
 	font-size: 1em;
 	/*original color #5e2d4d*/
-	color: #612e4e;
+	color: #713159;
 	text-transform: uppercase;
 	margin-bottom: 0.3333em;
 }
@@ -205,8 +205,9 @@ h4 + p {
 	font-size: 1.5em;
 }
 
-#current-projects-list {
-	margin-bottom: 1.5em;
+#current-projects-list, #past-projects-list {
+	max-width: 90%;
+	margin-top: 4em;
 }
 
 #current-projects-list section, #past-projects-list section {
@@ -216,12 +217,19 @@ h4 + p {
 }
 
 h3 a:hover {
-	border-bottom: 0.1em solid #612e4e;
+	border-bottom: 0.1em solid #713159;
 	padding-bottom: 0.2em;
 }
 
 h3 + img {
-	margin: 1em 0;
+	margin: 2em 0;
+}
+
+h3 + img:hover {
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+	transition-property: transform;
+	box-shadow: 0 0 0.5em rgba(240, 240, 240, 0.1);
 }
 
 section p {
