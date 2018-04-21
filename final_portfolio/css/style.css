@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Overpass:300,400');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	font-size: 16px;
+	font-family: Overpass, sans-serif;
+	background-image: url("../images/bg.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+	font-size: 1em;
+	float: right;
+}
+
+nav a {
+	margin-right: 1.5em;
+}
+
+nav a, a {
+	color: rgba(240, 240, 240, 0.5);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav a:hover:not(.hire-me) {
+	border-bottom: 0.1em solid rgba(240, 240, 240, 0.5);
+	padding-bottom: 0.2em;
+}
+
+.hire-me {
+	border: 0.1em solid;
+	border-color: #DCAA86;
+	color: #DCAA86;
+	padding: 0.6666em;
+	margin-right: 2.5em;
+}
+
+.hire-me:hover {
+	background-color: #DCAA86;
+	color: #fff;
+}
+
+#container {
+	margin: 3em 3em 1.5em;
+	padding-bottom: 1.5em;
+}
+
+header {
+	color: #DDDCDB;
+	word-spacing: 0.3333em;
+	padding-top: 4.3em;
+	margin-bottom: 2em;
+}
+
+#slogan {
+	font-size: 6.25em;
+}
+
+.end-header-words {
+	color:  #DCAA86;
+}
+
+section {
+	margin-bottom: 1.5em;
+}
+
+section h3, aside h3, h3 a {
+	font-size: 1em;
+	/*original color #5e2d4d*/
+	color: #713159;
+	text-transform: uppercase;
+	margin-bottom: 0.3333em;
+}
+
+section h4 {
+	text-transform: uppercase;
+}
+
+section h4, li, li a {
+	color: rgba(240, 240, 240, 0.5);
+	font-size: 1em;
+}
+
+h2 {
+	font-size: 1.8em;
+	padding-bottom: 0.5em;
+}
+
+p, .contact-text {
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-bottom: 0.6em;
+	font-family: "Inconsolata";
+}
+
+p, li, li a, .contact a {
+	color: rgba(240, 240, 240, 0.25);
+}
+
+li, li a, .contact a, {
+	text-decoration: none;
+}
+
+h4 + a:hover {
+	border-bottom: 0.1em solid rgba(240, 240, 240, 0.5);
+	padding-bottom: 0.2em;
+}
+
+h4 + p {
+	padding-top: 0.5em;
+}
+
+.current-projects-list:hover {
+	border-bottom: 0.1em solid rgba(240, 240, 240, 0.5);
+	padding-bottom: 0.2em;
+}
+
+#contact-buttons {
+	margin-top: 1em;
+}
+
+.contact a {
+	font-size: 1em;
+	text-transform: uppercase;
+	display: inline;
+	border: 0.125em solid;
+	border-color: rgba(240, 240, 240, 0.25);
+	color: rgba(240, 240, 240, 0.25);
+	padding: 0.3333em;
+	margin-right: 1em;
+}
+
+.contact a:hover {
+	background-color: rgba(240, 240, 240, 0.25);
+	color: rgba(240, 240, 240, 0.5);
+	transition: all .3s ease;
+}
+
+#other-page-headers {
+	font-size: 4em;
+}
+
+/*About Me Page*/
+
+.about-me-header {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	color: rgba(240, 240, 240, 0.5);
+}
+
+.about-section, .likes-section-top, .likes-section-bottom {
+	display: flex;
+	order: 1;
+}
+
+.about-section section {
+	flex-basis: 45%;
+}
+
+.likes-section-top section ul .likes-section-bottom section ul{
+	flex-basis: 66%;
+}
+
+.likes-section-bottom {
+	margin-top: 1em;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+}
+
+li {
+	flex: 1 0;
+	border: 0.05em solid;
+	padding: 0.3333em;
+	margin-right: 1em;
+	white-space: nowrap;
+}
+
+li:hover {
+	background-color: rgba(240, 240, 240, 0.25);
+	color: rgba(240, 240, 240, 0.5);
+	transition: all .3s ease;
+}
+
+li a {
+	text-transform: none;
+}
+
+.likes-words {
+	font-family: 'Inconsolata';
+	padding: 0.5em;
+}
+
+/*Projects Page*/
+
+.flex-projects-list {
+	display: flex;
+	order: 1;
+	flex-wrap: wrap;
+}
+
+.flex-projects-list section {
+	flex-basis: 33%
+
+}
+
+.flex-projects-list p {
+	max-width: 66%;
+}
+
+h3 a:hover {
+	border-bottom: 0.1em solid #713159;
+	padding-bottom: 0.2em;
+}
+
+h3 + img {
+	padding-top: 1em;
+}
+
+h3 + img:hover {
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+	transition-property: transform;
+}
+
+.job-title {
+	font-size: 0.8em;
+	word-spacing: 0.1em;
+	padding-top: 1.5em;
+}
+
+/*Contact Page*/
+
+.contact-section {
+	padding: 0.8em 0;
+}
+
+.contact-text {
+	padding-left: 1em;
+	color: rgba(240, 240, 240, 0.25);
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 1640px) {
+	.about-section section {
+		flex-basis: 25%
+	}
+}
+
+@media only screen and (max-width: 1440px) {
+	.about-section section {
+		flex-basis: 35%;
+	}
+}
+
+@media only screen and (max-width: 1135px) {
+	#slogan {
+		font-size: 5.7em;
+	}
+
+	.flex-projects-list section{
+		flex-basis: 50%;
+}
+
+	.flex-projects-list p {
+		max-width: 75%;
+	}
+
+
+@media only screen and (max-width: 1024px) {
+	#slogan {
+		font-size: 5.2em;
+	}
+
+	h2 {
+		font-size: 1.7em;
+	}
+
+	#other-page-headers {
+		font-size: 3.5em;
+	}
+
+	#about-nav, #projects-nav {
+		float: left;
+		margin-left: 3em;
+	}
+
+	.about-section section {
+		flex-basis: 45%;
+	}
+}
+
+@media only screen and (max-width: 965px) {
+	#cool-shit {
+		display: block;
+	}
+
+	#slogan {
+		font-size: 5em;
+	}
+
+	nav {
+		float: left;
+		margin-left: 3em;
+	}
+
+	#other-page-headers {
+		font-size: 3.5em;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.flex-projects-list section {
+		flex-basis: 100%;
+	}
+
+	#other-page-headers {
+		font-size: 3em;
+	}
+
+}
+
+@media only screen and (max-width: 620px) {
+	#cool-shit {
+		display: block;
+	}
+
+	#slogan {
+		font-size: 4.8em;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+}
+
+@media only screen and (max-width: 570px) {
+	#cool-shit {
+		display: block;
+	}
+
+	#slogan {
+		font-size: 4.2em;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+
+	#other-page-headers {
+		font-size: 3em;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	nav:hover a {
+		display: block;
+	}
+
+	nav a {
+		float: left;
+		padding: 1em 0;
+		font-size: 1em;
+	}
+
+	nav a:hover:not(.hire-me) {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	.hire-me {
+		position: fixed;
+		right: -3.75em;
+		top: 66.66%;
+		transform: rotate(-90deg);
+	}
+
+	#slogan {
+		font-size: 3.5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		margin-top: 0.8em;
+	}
+
+	.name, .skills, .contact h3, .contact a:not(#mobile-contact) {
+		display: none;
+	}
+
+	#projects-mobile-header {
+		font-size: 1em;
+	}
+
+	.contact a:hover {
+		background-color: transparent;
+		color: transparent;
+		transition: 0;
+	}
+
+@media only screen and (max-width: 425px) {
+	#other-page-headers {
+		font-size: 2.5em;
+		margin-top: 0.5em;
+	}
+
+	#about-nav {
+		font-size: 2em;
+	}
+
+	section h3 {
+		font-size: 1.2em;
+	}
+
+	.job-title {
+		font-size: 1em;
+	}
+
+	.about-section {
+		display: block;
+	}
+
+	.about-section img {
+		width: 75%;
+		height: auto;
+
+	}
+
+	.likes-section-top, .likes-section-bottom {
+		display: none;
+	}
+
+	.flex-projects-list section h4, .flex-projects-list section img, .flex-projects-list p {
+		max-width: 85%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	nav {
+		float: left;
+		margin-left: 2.5em;
+	}
+}
+
